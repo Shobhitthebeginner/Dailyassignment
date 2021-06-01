@@ -156,21 +156,18 @@ body{
 </head>
 
 <body>
-
+{% block content %}
   <div class="body"></div>
 		<div class="grad"></div>
 		<div class="header">
-			<div>Site<span>Random</span></div>
+			<div>Welcome To<span>Vision Site</span></div>
 		</div>
 		<br>
-		<div class="login">
-				<input type="text" placeholder="username" name="user"><br>
-				<input type="password" placeholder="password" name="password"><br>
-				<input type="button" value="Login">
-		</div>
 
-  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 
+
+{% endblock %}
+ <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
 </body>
 
 

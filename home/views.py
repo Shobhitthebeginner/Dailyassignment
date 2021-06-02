@@ -5,10 +5,11 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 def indexView(request):
     return render(request,'index.html')
+@login_required
 def dashboardViews(request):
     return render(request,"dashboard.html")
-def loginViews(request):
-    return render(request,"login.html")
+
+
 def registerViews(request):
     if request.method=="POST":
         form=UserCreationForm(request.POST)

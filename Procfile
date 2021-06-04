@@ -1,0 +1,1 @@
+web: gunicorn materate.wsgi --log-file -
